@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Qr code</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    :root{
+        --slate-900: #1F314F;
+        --slate-500: #68778D;
+        --slate-300: #D5E1EF;
+        --white: #FFFFFF;
+    }
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: "Outfit", sans-serif;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--slate-300);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-qr-code{
+        width: 320px;
+        height: 499px;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+
+    .container .container-qr-code .container-qr-code-header {
+        padding: 16px;
+    }
+
+    .container .container-qr-code .container-qr-code-header .container-qr-code-header-img{
+        width: 288px;
+        height: 288px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .container .container-qr-code .container-qr-code-header .container-qr-code-header-img img{
+        width: 100%;
+    }
+
+    .container .container-qr-code .container-qr-code-body {
+        padding: 8px 16px;
+    }   
+
+    .container .container-qr-code .container-qr-code-body .container-qr-code-body-title h3{
+        text-align: center;
+        padding: 0px 16px;
+        color: var(--slate-900);
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 120%;
+        letter-spacing: 0px;
+    }
+
+    .container .container-qr-code .container-qr-code-body .container-qr-code-body-description p {
+        text-align: center;
+        color: var(--slate-500);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        padding: 16px;
+    }
+
+</style>
+<body>
+    <main class="container">
+        <div class="container-qr-code">
+            <div class="container-qr-code-header">
+                <div class="container-qr-code-header-img">
+                    <img src="images/image-qr-code.png" alt="QR code leading to Frontend Mentor website"/>
+                </div>
+            </div>
+            <div class="container-qr-code-body">
+                <div class="container-qr-code-body-title">
+                    <h3>Improve your front-end skills by building projects</h3>
+                </div>
+                <div class="container-qr-code-body-description">
+                    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
